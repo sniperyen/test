@@ -1,0 +1,50 @@
+W1026 08:07:47.169834       8 backend_ssl.go:48] Error obtaining X.509 certificate: no object matching key "sy/test-tls" in local store
+W1026 08:07:47.169908       8 endpoints.go:79] Error obtaining Endpoints for Service "sy/test": no object matching key "sy/test" in local store
+W1026 08:07:47.169917       8 controller.go:824] Service "sy/test" does not have any active Endpoint.
+W1026 08:07:47.169938       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/diablo": no object matching key "alauda-system/diablo" in local store
+W1026 08:07:47.169946       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/devops-docs": no object matching key "alauda-system/devops-docs" in local store
+W1026 08:07:47.169965       8 controller.go:1076] Error getting SSL certificate "sy/test-tls": local SSL certificate sy/test-tls was not found. Using default certificate
+I1026 08:07:47.169992       8 controller.go:177] Configuration changes detected, backend reload required.
+I1026 08:07:47.170718       8 event.go:221] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"sy", Name:"test", UID:"396b231c-d8f6-11e8-8e0b-525400c56d1d", APIVersion:"extensions/v1beta1", ResourceVersion:"1019523", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress sy/test
+I1026 08:07:47.297245       8 controller.go:195] Backend successfully reloaded.
+I1026 08:07:47.298779       8 controller.go:212] Dynamic reconfiguration succeeded.
+W1026 08:07:50.503376       8 controller.go:824] Service "sy/test" does not have any active Endpoint.
+W1026 08:07:50.503430       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/diablo": no object matching key "alauda-system/diablo" in local store
+W1026 08:07:50.503444       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/devops-docs": no object matching key "alauda-system/devops-docs" in local store
+W1026 08:07:50.503468       8 controller.go:1076] Error getting SSL certificate "sy/test-tls": local SSL certificate sy/test-tls was not found. Using default certificate
+W1026 08:07:53.836782       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/diablo": no object matching key "alauda-system/diablo" in local store
+W1026 08:07:53.836817       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/devops-docs": no object matching key "alauda-system/devops-docs" in local store
+W1026 08:07:53.836842       8 controller.go:1076] Error getting SSL certificate "sy/test-tls": local SSL certificate sy/test-tls was not found. Using default certificate
+I1026 08:07:53.836876       8 controller.go:177] Configuration changes detected, backend reload required.
+I1026 08:07:53.938768       8 controller.go:195] Backend successfully reloaded.
+I1026 08:07:53.941108       8 controller.go:212] Dynamic reconfiguration succeeded.
+
+
+
+W1026 08:07:57.170056       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/diablo": no object matching key "alauda-system/diablo" in local store
+W1026 08:07:57.170095       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/devops-docs": no object matching key "alauda-system/devops-docs" in local store
+W1026 08:07:57.170128       8 controller.go:1076] Error getting SSL certificate "sy/test-tls": local SSL certificate sy/test-tls was not found. Using default certificate
+I1026 08:08:18.733708       8 status.go:362] updating Ingress sy/test status to [{ }]
+I1026 08:08:18.737942       8 event.go:221] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"sy", Name:"test", UID:"396b231c-d8f6-11e8-8e0b-525400c56d1d", APIVersion:"extensions/v1beta1", ResourceVersion:"1019595", FieldPath:""}): type: 'Normal' reason: 'UPDATE' Ingress sy/test
+W1026 08:08:18.738004       8 backend_ssl.go:48] Error obtaining X.509 certificate: no object matching key "sy/test-tls" in local store
+W1026 08:08:18.738676       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/diablo": no object matching key "alauda-system/diablo" in local store
+W1026 08:08:18.738719       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/devops-docs": no object matching key "alauda-system/devops-docs" in local store
+W1026 08:08:18.738742       8 controller.go:1076] Error getting SSL certificate "sy/test-tls": local SSL certificate sy/test-tls was not found. Using default certificate
+I1026 08:08:20.986156       8 event.go:221] Event(v1.ObjectReference{Kind:"Ingress", Namespace:"sy", Name:"cm-acme-http-solver-kwq28", UID:"4d930483-d8f6-11e8-8e0b-525400c56d1d", APIVersion:"extensions/v1beta1", ResourceVersion:"1019606", FieldPath:""}): type: 'Normal' reason: 'CREATE' Ingress sy/cm-acme-http-solver-kwq28
+W1026 08:08:22.071636       8 controller.go:824] Service "sy/cm-acme-http-solver-747h2" does not have any active Endpoint.
+W1026 08:08:22.071678       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/diablo": no object matching key "alauda-system/diablo" in local store
+W1026 08:08:22.071690       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/devops-docs": no object matching key "alauda-system/devops-docs" in local store
+W1026 08:08:22.071712       8 controller.go:1076] Error getting SSL certificate "sy/test-tls": local SSL certificate sy/test-tls was not found. Using default certificate
+I1026 08:08:22.071758       8 controller.go:177] Configuration changes detected, backend reload required.
+I1026 08:08:22.173581       8 controller.go:195] Backend successfully reloaded.
+I1026 08:08:22.175123       8 controller.go:212] Dynamic reconfiguration succeeded.
+W1026 08:08:25.404905       8 controller.go:824] Service "sy/cm-acme-http-solver-747h2" does not have any active Endpoint.
+W1026 08:08:25.404945       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/diablo": no object matching key "alauda-system/diablo" in local store
+W1026 08:08:25.404957       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/devops-docs": no object matching key "alauda-system/devops-docs" in local store
+W1026 08:08:25.404979       8 controller.go:1076] Error getting SSL certificate "sy/test-tls": local SSL certificate sy/test-tls was not found. Using default certificate
+W1026 08:08:28.738250       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/diablo": no object matching key "alauda-system/diablo" in local store
+W1026 08:08:28.738282       8 controller.go:749] Error obtaining Endpoints for Service "alauda-system/devops-docs": no object matching key "alauda-system/devops-docs" in local store
+W1026 08:08:28.738308       8 controller.go:1076] Error getting SSL certificate "sy/test-tls": local SSL certificate sy/test-tls was not found. Using default certificate
+I1026 08:08:28.738344       8 controller.go:177] Configuration changes detected, backend reload required.
+I1026 08:08:28.839229       8 controller.go:195] Backend successfully reloaded.
+I1026 08:08:28.841031       8 controller.go:212] Dynamic reconfiguration succeeded.

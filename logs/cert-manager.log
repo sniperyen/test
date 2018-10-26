@@ -1,0 +1,70 @@
+I1026 08:07:47.175581       1 controller.go:168] ingress-shim controller: syncing item 'sy/test'
+I1026 08:07:47.186566       1 controller.go:182] ingress-shim controller: Finished processing work item "sy/test"
+I1026 08:07:47.186590       1 controller.go:168] ingress-shim controller: syncing item 'sy/test'
+I1026 08:07:47.186606       1 sync.go:140] Certificate "test-tls" for ingress "test" already exists
+I1026 08:07:47.186618       1 sync.go:143] Certificate "test-tls" for ingress "test" is up to date
+I1026 08:07:47.186623       1 controller.go:182] ingress-shim controller: Finished processing work item "sy/test"
+I1026 08:07:49.185472       1 controller.go:171] certificates controller: syncing item 'sy/test-tls'
+I1026 08:07:49.185574       1 sync.go:274] Preparing certificate sy/test-tls with issuer
+I1026 08:07:49.185707       1 prepare.go:263] Cleaning up previous order for certificate sy/test-tls
+I1026 08:07:49.185717       1 prepare.go:279] Cleaning up old/expired challenges for Certificate sy/test-tls
+I1026 08:07:49.185725       1 logger.go:38] Calling CreateOrder
+I1026 08:07:50.521876       1 acme.go:126] Created order for domains: [{dns hello.codreamer.online}]
+I1026 08:07:50.521932       1 logger.go:73] Calling GetAuthorization
+I1026 08:07:50.736797       1 logger.go:93] Calling HTTP01ChallengeResponse
+I1026 08:07:50.736827       1 prepare.go:279] Cleaning up old/expired challenges for Certificate sy/test-tls
+I1026 08:07:50.736833       1 logger.go:68] Calling GetChallenge
+I1026 08:08:18.743375       1 controller.go:168] ingress-shim controller: syncing item 'sy/test'
+I1026 08:08:18.743462       1 sync.go:140] Certificate "test-tls" for ingress "test" already exists
+I1026 08:08:18.743486       1 sync.go:143] Certificate "test-tls" for ingress "test" is up to date
+I1026 08:08:18.743498       1 controller.go:182] ingress-shim controller: Finished processing work item "sy/test"
+I1026 08:08:20.952348       1 pod.go:65] No existing HTTP01 challenge solver pod found for Certificate "sy/test-tls". One will be created.
+I1026 08:08:20.959445       1 service.go:51] No existing HTTP01 challenge solver service found for Certificate "sy/test-tls". One will be created.
+I1026 08:08:20.982926       1 ingress.go:49] Looking up Ingresses for selector certmanager.k8s.io/acme-http-domain=1661339816,certmanager.k8s.io/acme-http-token=1421020885
+I1026 08:08:20.982957       1 ingress.go:102] No existing HTTP01 challenge solver ingress found for Certificate "sy/test-tls". One will be created.
+I1026 08:08:20.984965       1 helpers.go:194] Setting lastTransitionTime for Certificate "test-tls" condition "Ready" to 2018-10-26 08:08:20.98495857 +0000 UTC m=+15746.594904908
+I1026 08:08:20.984988       1 sync.go:276] Error preparing issuer for certificate sy/test-tls: http-01 self check failed for domain "hello.codreamer.online"
+E1026 08:08:20.985010       1 sync.go:197] [sy/test-tls] Error getting certificate 'test-tls': secret "test-tls" not found
+E1026 08:08:20.989585       1 controller.go:180] certificates controller: Re-queuing item "sy/test-tls" due to error processing: http-01 self check failed for domain "hello.codreamer.online"
+I1026 08:08:20.989796       1 controller.go:168] ingress-shim controller: syncing item 'sy/test'
+I1026 08:08:20.989832       1 sync.go:140] Certificate "test-tls" for ingress "test" already exists
+I1026 08:08:20.989843       1 sync.go:143] Certificate "test-tls" for ingress "test" is up to date
+I1026 08:08:20.989849       1 controller.go:182] ingress-shim controller: Finished processing work item "sy/test"
+I1026 08:08:20.990612       1 controller.go:168] ingress-shim controller: syncing item 'sy/cm-acme-http-solver-kwq28'
+I1026 08:08:20.990626       1 sync.go:65] Not syncing ingress sy/cm-acme-http-solver-kwq28 as it does not contain necessary annotations
+I1026 08:08:20.990633       1 controller.go:182] ingress-shim controller: Finished processing work item "sy/cm-acme-http-solver-kwq28"
+I1026 08:08:24.989724       1 controller.go:171] certificates controller: syncing item 'sy/test-tls'
+I1026 08:08:24.989853       1 sync.go:274] Preparing certificate sy/test-tls with issuer
+I1026 08:08:24.990039       1 logger.go:43] Calling GetOrder
+I1026 08:08:25.468767       1 logger.go:73] Calling GetAuthorization
+I1026 08:08:25.693957       1 logger.go:93] Calling HTTP01ChallengeResponse
+I1026 08:08:25.694004       1 prepare.go:279] Cleaning up old/expired challenges for Certificate sy/test-tls
+I1026 08:08:25.694024       1 logger.go:68] Calling GetChallenge
+I1026 08:08:56.036024       1 ingress.go:49] Looking up Ingresses for selector certmanager.k8s.io/acme-http-domain=1661339816,certmanager.k8s.io/acme-http-token=1421020885
+I1026 08:08:56.036067       1 helpers.go:201] Found status change for Certificate "test-tls" condition "Ready": "False" -> "False"; setting lastTransitionTime to 2018-10-26 08:08:56.036061835 +0000 UTC m=+15781.646008075
+I1026 08:08:56.036083       1 sync.go:276] Error preparing issuer for certificate sy/test-tls: http-01 self check failed for domain "hello.codreamer.online"
+E1026 08:08:56.036098       1 sync.go:197] [sy/test-tls] Error getting certificate 'test-tls': secret "test-tls" not found
+I1026 08:08:56.039472       1 controller.go:168] ingress-shim controller: syncing item 'sy/test'
+I1026 08:08:56.039510       1 sync.go:140] Certificate "test-tls" for ingress "test" already exists
+I1026 08:08:56.039524       1 sync.go:143] Certificate "test-tls" for ingress "test" is up to date
+I1026 08:08:56.039534       1 controller.go:182] ingress-shim controller: Finished processing work item "sy/test"
+E1026 08:08:56.040488       1 controller.go:180] certificates controller: Re-queuing item "sy/test-tls" due to error processing: http-01 self check failed for domain "hello.codreamer.online"
+I1026 08:09:12.039623       1 controller.go:171] certificates controller: syncing item 'sy/test-tls'
+I1026 08:09:12.039727       1 sync.go:274] Preparing certificate sy/test-tls with issuer
+I1026 08:09:12.039886       1 logger.go:43] Calling GetOrder
+I1026 08:09:12.481093       1 logger.go:73] Calling GetAuthorization
+I1026 08:09:12.710123       1 logger.go:93] Calling HTTP01ChallengeResponse
+I1026 08:09:12.710167       1 prepare.go:279] Cleaning up old/expired challenges for Certificate sy/test-tls
+I1026 08:09:12.710184       1 logger.go:68] Calling GetChallenge
+I1026 08:09:18.740314       1 controller.go:168] ingress-shim controller: syncing item 'sy/cm-acme-http-solver-kwq28'
+I1026 08:09:18.740345       1 sync.go:65] Not syncing ingress sy/cm-acme-http-solver-kwq28 as it does not contain necessary annotations
+I1026 08:09:18.740358       1 controller.go:182] ingress-shim controller: Finished processing work item "sy/cm-acme-http-solver-kwq28"
+I1026 08:09:42.934942       1 ingress.go:49] Looking up Ingresses for selector certmanager.k8s.io/acme-http-domain=1661339816,certmanager.k8s.io/acme-http-token=1421020885
+I1026 08:09:42.934984       1 helpers.go:201] Found status change for Certificate "test-tls" condition "Ready": "False" -> "False"; setting lastTransitionTime to 2018-10-26 08:09:42.934978491 +0000 UTC m=+15828.544924761
+I1026 08:09:42.935001       1 sync.go:276] Error preparing issuer for certificate sy/test-tls: http-01 self check failed for domain "hello.codreamer.online"
+E1026 08:09:42.935019       1 sync.go:197] [sy/test-tls] Error getting certificate 'test-tls': secret "test-tls" not found
+E1026 08:09:42.937764       1 controller.go:180] certificates controller: Re-queuing item "sy/test-tls" due to error processing: http-01 self check failed for domain "hello.codreamer.online"
+I1026 08:09:42.937954       1 controller.go:168] ingress-shim controller: syncing item 'sy/test'
+I1026 08:09:42.937971       1 sync.go:140] Certificate "test-tls" for ingress "test" already exists
+I1026 08:09:42.937980       1 sync.go:143] Certificate "test-tls" for ingress "test" is up to date
+I1026 08:09:42.937986       1 controller.go:182] ingress-shim controller: Finished processing work item "sy/test"
